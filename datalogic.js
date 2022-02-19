@@ -94,6 +94,10 @@ class DataLogic {
     return slope * x + yIntercept;
   }
   show() {
+    textSize(15);
+    fill(50, 150);
+    noStroke();
+    text("Click to see how this model is performing!", 400, 780);
     for (let neuron of this.neurons) {
       neuron.showLabel();
     }
